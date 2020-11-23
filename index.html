@@ -5,20 +5,42 @@
     <meta name="description" content="My website <3">
     <meta name="keywords" content="Alessandro Lo Prete CV LoPrete aleLoPrete">
     </head>
-    <body>
+
         <div id="box">
             <h1 class="title">Alessandro Lo Prete</h1>
             <h3><em>definitely <span style="font-weight:700">not</span> a web designer</em></h3>
+            <p> 
+            What I've studied and where:
+                <ul> 
+                    <li> Computer Engineering at <a href="https://www.polito.it">
+                            Polytechnic of Turin </a>
+                        <br> Some of the classes I've enjoyed the most
+                        <ul>
+                            <li>Algorithms and data structures</li>
+                            <li>Compuer networks</li>
+                            <li>Operating systems</li>
+                            <li>Object oriented programming</li>
+                            <li>Signal analysis and systems</li>
+                        </ul>
+                    </li>
+                </ul>
+            What I've done and why:
+                <ul>
+                    <li>Member of CdA at <a href="https://www.jetop.com">JEToP</a><li>
+                </ul>
+            </p>
             <p>
             <h3><em>Stalk me on:<em></h3>
-                <button>
+            <ul>
+                <li><button>
                     <a class="link" href="https://www.linkedin.com/in/alessandroloprete/"
                         target="_blank">LinkedIn</a>
-                </button>
-                <button>
+                    </button></li>
+                    <li><button>
                     <a class="link" href="https://github.com/aleLoPrete"
                         target="_blank">GitHub</a>
-                </button>
+                </button></li>
+            </ul>
             </p>
         </div>
     </body>
@@ -36,8 +58,19 @@
         *{
             font-family:"Roboto";
             font-weight:300;
-            font-size: calc(5vw);
+            font-size: calc(3vw);
             color:white;
+        }
+        button{
+            border-radius: 12px;
+            background-color:white;
+            border-width: 0px;
+            padding:1%;
+            margin:1%;
+        }
+        a{
+            text-decoration:none;
+            font-weight:500;
         }
         #box{
             position: relative;
@@ -47,13 +80,23 @@
             border-width: 1.5px;
             border-color: #071419;
             border-radius: 12px;*/
-            text-align:center;
+            text-align:left;
             background-color:#0d0d0d;
+            padding:2%;
         }
         .link{
             text-decoration:none; 
             color:black;
             font-family:"Acme";
         } 
+        @media only screen and (min-width:900px){
+            .title{
+                font-size:5vw;
+            }
+            *{
+                font-size:1.3vw;
+            }
+
+        }
     </style>
 </html>
